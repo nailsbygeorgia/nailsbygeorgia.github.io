@@ -5,38 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nails by Georgia</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FFE0E6;
-            text-align: center;
-            padding: 40px;
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
         }
 
-        h1 {
-            color: #d46a92;
-            font-size: 48px;
+        body{
+            background:#e9e4df;
+            font-family:'Cormorant Garamond', serif;
+            display:flex;
+            justify-content:center;
+            padding:40px 20px;
         }
 
-        p {
-            font-size: 22px;
-            color: #444;
+        .phone-frame{
+            width:390px;
+            background:
+                linear-gradient(rgba(42,18,14,.88), rgba(42,18,14,.92)),
+                url('https://www.transparenttextures.com/patterns/leopard.png');
+            border-radius:40px;
+            padding:35px 28px;
+            color:#f5e6dc;
+            box-shadow:0 10px 40px rgba(0,0,0,.25);
         }
 
-        img {
-            width: 300px;
-            border-radius: 20px;
-            margin-top: 20px;
+        .small-title{
+            text-align:center;
+            letter-spacing:4px;
+            font-size:11px;
+            margin-bottom:6px;
+            opacity:.85;
         }
+
+        .main-name{
+            text-align:center;
+            font-family:'Pinyon Script', cursive;
+            font-size:58px;
+            line-height:1;
+            margin-bottom:25px;
+            color:#fff3eb;
+        }
+
+        .profile{
+            width:170px;
+            height:170px;
+            border-radius:20px;
+            object-fit:cover;
+            display:block;
+            margin:0 auto 25px auto;
+            border:2px solid rgba(255,255,255,.15);
+        }
+
+        .about-name{
+            text-align:center;
+            font-size:30px;
+            margin-bottom:10px;
+        }
+
+        .about-text{
+            text-align:center;
+            font-size:16px;
+            line-height:1.5;
+            opacity:.9;
+            margin-bottom:28px;
+        }
+
+        .section-row{
+            display:flex;
+            gap:15px;
+            margin-bottom:25px;
+        }
+
+        .info-box{
+            flex:1;
+            border:1px solid rgba(255,255,255,.18);
+            border-radius:18px;
+            padding:18px;
+            background:rgba(255,255,255,.04);
+        }
+
+        .box-title{
+            font-family:'Pinyon Script', cursive;
+            font-size:28px;
+            margin-bottom:10px;
+            color:#fff3eb;
+        }
+
+        .info-box p{
+            margin-bottom:7px;
+            font-size:15px;
+        }
+
+        .section-title{
+            text-align:center;
+            font-family:'Pinyon Script', cursive;
+            font-size:34px;
+            margin:20px 0 18px 0;
+        }
+
+        .prep-box{
+            border:1px solid rgba(255,255,255,.18);
+            border-radius:16px;
+            padding:14px;
+            margin-bottom:12px;
+            background:rgba(255,255,255,.04);
+            font-size:15px;
+            line-height:1.4;
+        }
+
+        .booking-btn{
+            display:block;
+            text-align:center;
+            text-decoration:none;
+            background:#f0d5c5;
+            color:#3a1f1a;
+            padding:16px;
+            border-radius:18px;
+            margin-top:25px;
+            font-size:22px;
+            font-weight:bold;
+            transition:.2s;
+        }
+
+        .booking-btn:hover{
+            transform:scale(1.02);
+        }
+
+        .footer{
+            text-align:center;
+            margin-top:30px;
+            opacity:.7;
+            font-size:14px;
+        }
+
     </style>
 </head>
 <body>
 
-    <h1>Nails by Georgia 💅</h1>
+<div class="phone-frame">
 
-    <p>If you can see this website, eli Pages is working!</p>
+    <div class="small-title">NAILS BY</div>
 
-    <img src="lp_image.jpeg" alt="Nail Photo">
+    <div class="main-name">Georgia</div>
+
+    <img src="lp_image.jpeg" class="profile">
+
+    <div class="about-name">Luxury Nail Artist</div>
+
+    <div class="about-text">
+        Creating classy, trendy, and detailed nail sets with a personalized experience for every client.
+    </div>
+
+    <div class="section-row">
+
+        <div class="info-box">
+            <div class="box-title">Hours</div>
+
+            <p>Monday - Friday</p>
+            <p>9:00 AM - 6:00 PM</p>
+
+            <br>
+
+            <p>Saturday</p>
+            <p>10:00 AM - 4:00 PM</p>
+
+            <br>
+
+            <p>Sunday Closed</p>
+        </div>
+
+        <div class="info-box">
+            <div class="box-title">Contact</div>
+
+            <p>📞 225-978-5845</p>
+            <p>📸 @nailsbygeorgia00</p>
+            <p>🎵 @nailsbygeorgia4</p>
+            <p>✉️ nailsbygeorgia00@gmail.com</p>
+
+        </div>
+
+    </div>
+
+    <div class="section-title">Before Your Appointment</div>
+
+    <div class="prep-box">
+        Please arrive with clean hands and bare nails if possible.
+    </div>
+
+    <div class="prep-box">
+        A deposit may be required to secure your appointment.
+    </div>
+
+    <div class="prep-box">
+        Please message before booking for extra-long or detailed freestyle sets.
+    </div>
+
+    <div class="prep-box">
+        Late arrivals over 15 minutes may need to reschedule.
+    </div>
+
+    <a href="#" class="booking-btn">
+        Book Appointment
+    </a>
+
+    <div class="footer">
+        Thank you for supporting Nails by Georgia ✨
+    </div>
+
+</div>
 
 </body>
 </html>
