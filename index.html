@@ -25,10 +25,12 @@ body{
     min-height:100vh;
     font-family:'Cormorant Garamond', serif;
     color:#f8eee8;
+
     background-image:url("cheetah-bg.jpeg");
     background-size:450px auto;
     background-repeat:repeat;
     background-position:top center;
+
     padding:50px 20px;
 }
 
@@ -36,9 +38,13 @@ body{
     width:100%;
     max-width:1100px;
     margin:auto;
+
     background:rgba(39,20,16,.94);
+
     border-radius:35px;
+
     padding:60px;
+
     box-shadow:0 25px 60px rgba(0,0,0,.45);
 }
 
@@ -125,9 +131,12 @@ body{
     color:#f7d0db;
 }
 
-.phone-number{
-    color:#ffc9da;
+/* FIXES PHONE LINK COLOR */
+.phone-number,
+.phone-number a{
+    color:#8fd3ff !important;
     font-weight:700;
+    text-decoration:none;
 }
 
 .payment-grid{
@@ -296,7 +305,7 @@ body{
 
             <div class="contact-line phone-number">
                 <i class="fa-solid fa-phone"></i>
-                <span>225-978-5845</span>
+                <a href="tel:2259785845">225-978-5845</a>
             </div>
 
             <div class="contact-line">
@@ -328,7 +337,7 @@ body{
 
             <div class="payment-grid">
 
-               <div class="payment-card">
+                <div class="payment-card">
                     <i class="fa-brands fa-vimeo-v"></i>
                     Venmo
                 </div>
@@ -355,23 +364,23 @@ body{
         <div class="info-box">
 
             <div class="box-title">
-                Booking Notes
+                Appointment Prep
             </div>
 
             <p>
-                Please message before booking freestyle or extra-long sets.
+                Please come with bare nails if possible.
             </p>
 
             <br>
 
             <p>
-                After-hours appointments may include an additional fee.
+                If you already have a set on, please be sure to book a soak-off so enough time can be scheduled for your appointment.
             </p>
 
             <br>
 
             <p>
-                New clients are always welcome 🤍
+                This helps appointments stay on schedule and gives enough time for your new set ✨
             </p>
 
         </div>
