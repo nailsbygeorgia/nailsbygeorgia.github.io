@@ -1,4 +1,4 @@
-```html
+```html id="5vk586"
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +10,9 @@
 <title>Georgia's Beauty Co.</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <style>
 
@@ -107,12 +110,48 @@ body{
 .info-box p,
 .policy-box{
     font-size:20px;
-    line-height:1.7;
+    line-height:1.8;
+}
+
+.contact-line{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:10px;
+}
+
+.contact-line i{
+    width:24px;
+    font-size:20px;
+    color:#f7d0db;
 }
 
 .phone-number{
     color:#ffc9da;
     font-weight:700;
+}
+
+.payment-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    margin-top:10px;
+}
+
+.payment-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:18px;
+    padding:18px;
+    text-align:center;
+    font-size:19px;
+}
+
+.payment-card i{
+    display:block;
+    font-size:34px;
+    margin-bottom:10px;
+    color:#f8ddd0;
 }
 
 .section-title{
@@ -188,7 +227,8 @@ body{
     }
 
     .section-row,
-    .policy-grid{
+    .policy-grid,
+    .payment-grid{
         grid-template-columns:1fr;
     }
 
@@ -255,20 +295,84 @@ body{
                 Contact
             </div>
 
-            <p class="phone-number">
-                📞 225-978-5845
-            </p>
+            <div class="contact-line phone-number">
+                <i class="fa-solid fa-phone"></i>
+                <span>225-978-5845</span>
+            </div>
+
+            <div class="contact-line">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@nailsbygeorgia00</span>
+            </div>
+
+            <div class="contact-line">
+                <i class="fa-brands fa-tiktok"></i>
+                <span>@nailsbygeorgia4</span>
+            </div>
+
+            <div class="contact-line">
+                <i class="fa-solid fa-envelope"></i>
+                <span>nailsbygeorgia00@gmail.com</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section-row">
+
+        <div class="info-box">
+
+            <div class="box-title">
+                Accepted Payments
+            </div>
+
+            <div class="payment-grid">
+
+                <div class="payment-card">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    Venmo
+                </div>
+
+                <div class="payment-card">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    Cash App
+                </div>
+
+                <div class="payment-card">
+                    <i class="fa-brands fa-apple"></i>
+                    Apple Pay
+                </div>
+
+                <div class="payment-card">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    Cash
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="info-box">
+
+            <div class="box-title">
+                Booking Notes
+            </div>
 
             <p>
-                📸 @nailsbygeorgia00
+                Please message before booking freestyle or extra-long sets.
             </p>
 
-            <p>
-                🎵 @nailsbygeorgia4
-            </p>
+            <br>
 
             <p>
-                ✉️ nailsbygeorgia00@gmail.com
+                After-hours appointments may include an additional fee.
+            </p>
+
+            <br>
+
+            <p>
+                New clients are always welcome 🤍
             </p>
 
         </div>
