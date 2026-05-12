@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#5b3427">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<title>Soak-Off Needed? | Georgia's Beauty Co.</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    background:#5b3427;
+}
+
+body{
+    min-height:100vh;
+    font-family:'Cormorant Garamond', serif;
+    color:#f8eee8;
+    background-image:url("cheetah-bg.jpeg");
+    background-size:450px auto;
+    background-repeat:repeat;
+    background-position:top center;
+    padding:50px 20px;
+}
+
+.page{
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+    background:rgba(39,20,16,.94);
+    border-radius:35px;
+    padding:60px;
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+}
+
+.logo{
+    text-align:center;
+    font-family:'Playfair Display', serif;
+    font-size:70px;
+    font-weight:600;
+    line-height:1.1;
+    color:#f9e7dc;
+    margin-bottom:20px;
+    text-shadow:0 3px 15px rgba(0,0,0,.4);
+}
+
+.subtitle{
+    text-align:center;
+    font-size:24px;
+    color:#f2ddd2;
+    margin-bottom:50px;
+    line-height:1.6;
+}
+
+.option-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.option-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:28px;
+    padding:40px 35px;
+    text-align:center;
+    text-decoration:none;
+    color:#f8eee8;
+    transition:.2s ease;
+}
+
+.option-card:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.1);
+}
+
+.option-card h2{
+    font-family:'Playfair Display', serif;
+    font-size:40px;
+    font-weight:600;
+    color:#f7e4d8;
+    margin-bottom:18px;
+    line-height:1.2;
+}
+
+.option-card p{
+    font-size:21px;
+    line-height:1.7;
+    color:#f2ddd2;
+}
+
+.highlight{
+    margin-top:18px;
+    color:#ffc9da;
+    font-weight:700;
+}
+
+.note{
+    margin-top:40px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:22px;
+    padding:25px;
+    text-align:center;
+    font-size:20px;
+    line-height:1.6;
+    color:#f2ddd2;
+}
+
+.back-link{
+    display:block;
+    text-align:center;
+    margin-top:30px;
+    color:#f1d7c8;
+    text-decoration:none;
+    font-size:20px;
+}
+
+.footer{
+    text-align:center;
+    margin-top:35px;
+    font-size:18px;
+    opacity:.8;
+}
+
+@media(max-width:800px){
+
+    body{
+        padding:20px 12px;
+    }
+
+    .page{
+        padding:35px 24px;
+        border-radius:28px;
+    }
+
+    .logo{
+        font-size:50px;
+    }
+
+    .subtitle{
+        font-size:20px;
+    }
+
+    .option-grid{
+        grid-template-columns:1fr;
+    }
+
+    .option-card h2{
+        font-size:34px;
+    }
+
+    .option-card p{
+        font-size:18px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="logo">
+        Do You Need a Soak-Off?
+    </div>
+
+    <div class="subtitle">
+        You selected an appointment at my house. This helps make sure enough time is scheduled for your visit.
+    </div>
+
+    <div class="option-grid">
+
+        <a href="home-services-soakoff.html" class="option-card">
+
+            <h2>
+                Yes, I Have Nails On
+            </h2>
+
+            <p>
+                Choose this if you currently have acrylic, Gel-X, dip, or another set that needs to be removed.
+            </p>
+
+            <p class="highlight">
+                Extra time will be added for removal.
+            </p>
+
+        </a>
+
+        <a href="home-services.html" class="option-card">
+
+            <h2>
+                No, I Have Bare Nails
+            </h2>
+
+            <p>
+                Choose this if you are coming with bare nails and do not need anything removed.
+            </p>
+
+            <p class="highlight">
+                Continue to regular home appointment options.
+            </p>
+
+        </a>
+
+    </div>
+
+    <div class="note">
+        If you are unsure, please choose the soak-off option or message me before booking so your appointment has enough time.
+    </div>
+
+    <a href="booking.html" class="back-link">
+        ← Back to Location Options
+    </a>
+
+    <div class="footer">
+        Georgia's Beauty Co. ✨
+    </div>
+
+</div>
+
+</body>
+
+</html>
