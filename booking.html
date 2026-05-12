@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book with Georgia's Beauty Co.</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    background:#5b3427;
+}
+
+body{
+    min-height:100vh;
+    font-family:'Cormorant Garamond', serif;
+    color:#f8eee8;
+    background-image:url("cheetah-bg.jpeg");
+    background-size:450px auto;
+    background-repeat:repeat;
+    background-position:top center;
+    padding:50px 20px;
+}
+
+.page{
+    width:100%;
+    max-width:1050px;
+    margin:auto;
+    background:rgba(39,20,16,.94);
+    border-radius:35px;
+    padding:55px;
+    box-shadow:0 25px 60px rgba(0,0,0,.45);
+}
+
+.logo{
+    text-align:center;
+    font-family:'Pinyon Script', cursive;
+    font-size:88px;
+    line-height:1;
+    color:#f9e7dc;
+    margin-bottom:15px;
+    text-shadow:0 3px 15px rgba(0,0,0,.4);
+}
+
+.subtitle{
+    text-align:center;
+    font-size:24px;
+    color:#f2ddd2;
+    margin-bottom:45px;
+}
+
+.booking-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:22px;
+}
+
+.booking-card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:24px;
+    padding:30px;
+    text-decoration:none;
+    color:#f8eee8;
+    transition:.2s ease;
+}
+
+.booking-card:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.1);
+}
+
+.booking-card h2{
+    font-family:'Pinyon Script', cursive;
+    font-size:44px;
+    color:#f7e4d8;
+    margin-bottom:10px;
+}
+
+.time{
+    font-size:19px;
+    color:#ffc9da;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.booking-card p{
+    font-size:20px;
+    line-height:1.6;
+    color:#f2ddd2;
+}
+
+.notice{
+    margin-top:40px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:22px;
+    padding:25px;
+    text-align:center;
+    font-size:20px;
+    line-height:1.6;
+}
+
+.back-link{
+    display:block;
+    text-align:center;
+    margin-top:35px;
+    color:#f1d7c8;
+    font-size:20px;
+    text-decoration:none;
+}
+
+@media(max-width:800px){
+    body{
+        padding:20px 12px;
+    }
+
+    .page{
+        padding:35px 24px;
+        border-radius:28px;
+    }
+
+    .logo{
+        font-size:62px;
+    }
+
+    .subtitle{
+        font-size:20px;
+    }
+
+    .booking-grid{
+        grid-template-columns:1fr;
+    }
+
+    .booking-card h2{
+        font-size:38px;
+    }
+
+    .booking-card p{
+        font-size:18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="logo">Book Your Appointment</div>
+
+    <div class="subtitle">
+        Choose the option that best fits what you need, then you’ll be taken to the correct booking calendar.
+    </div>
+
+    <div class="booking-grid">
+
+        <a href="PASTE_BASIC_SET_LINK_HERE" class="booking-card" target="_blank">
+            <h2>Basic Set</h2>
+            <div class="time">Estimated time: 2 hours</div>
+            <p>
+                Best for a fresh set with a simple, clean look or light design work.
+            </p>
+        </a>
+
+        <a href="PASTE_SOAK_OFF_LINK_HERE" class="booking-card" target="_blank">
+            <h2>Soak-Off + New Set</h2>
+            <div class="time">Estimated time: 3 hours</div>
+            <p>
+                Choose this if you already have a set on and need removal before your new set.
+            </p>
+        </a>
+
+        <a href="PASTE_DETAILED_SET_LINK_HERE" class="booking-card" target="_blank">
+            <h2>Freestyle / Detailed Set</h2>
+            <div class="time">Estimated time: 3.5 hours</div>
+            <p>
+                Best for detailed nail art, longer sets, charms, gems, or freestyle designs.
+            </p>
+        </a>
+
+        <a href="PASTE_FILL_LINK_HERE" class="booking-card" target="_blank">
+            <h2>Fill Appointment</h2>
+            <div class="time">Estimated time: 1.5 hours</div>
+            <p>
+                For returning clients who need a fill on an existing set.
+            </p>
+        </a>
+
+    </div>
+
+    <div class="notice">
+        Please book at least 24 hours in advance. If you are unsure which option to choose, message me before booking.
+    </div>
+
+    <a href="index.html" class="back-link">
+        ← Back to Home
+    </a>
+
+</div>
+
+</body>
+</html>
