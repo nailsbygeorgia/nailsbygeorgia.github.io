@@ -209,6 +209,62 @@ body{
     opacity:.8;
 }
 
+/* BESTIE DEAL BANNER */
+
+.bestie-banner{
+    text-align:center;
+    margin:-15px 0 45px;
+    padding:22px;
+    background:linear-gradient(
+        135deg,
+        rgba(255,182,193,.18),
+        rgba(255,214,224,.08)
+    );
+    border:2px solid rgba(255,182,193,.35);
+    border-radius:24px;
+}
+
+.bestie-text{
+    font-size:32px;
+    font-weight:700;
+    color:#ffd7e6;
+    margin-bottom:15px;
+}
+
+.bestie-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#ffb6c1;
+    color:#4a1d26;
+    padding:16px 34px;
+    border-radius:999px;
+    font-size:24px;
+    font-weight:700;
+    box-shadow:0 8px 20px rgba(255,182,193,.25);
+    transition:.2s ease;
+}
+
+.bestie-btn:hover{
+    transform:translateY(-3px) scale(1.03);
+    background:#ffc4d0;
+}
+
+@media(max-width:800px){
+
+    .bestie-text{
+        font-size:24px;
+    }
+
+    .bestie-btn{
+        width:100%;
+        font-size:20px;
+        padding:16px;
+    }
+
+    body{
+        padding:20px 12px;
+    }
+
 @media(max-width:800px){
 
     body{
@@ -264,13 +320,25 @@ body{
 
     <div class="logo-wrap">
 
-        <div class="main-name">
-            Georgia's Beauty Co.
-        </div>
-
+    <div class="main-name">
+        Georgia's Beauty Co.
     </div>
 
-    <div class="hero">
+</div>
+
+<div class="bestie-banner">
+
+    <div class="bestie-text">
+        🎀 Here for the Bestie Deal? 🎀
+    </div>
+
+    <a href="https://tidycal.com/georgiaknight00/bestie-deal" class="bestie-btn">
+        Click Here & Book Together
+    </a>
+
+</div>
+
+<div class="hero">
 
         <img src="Gheadshot.jpeg" class="profile" alt="Georgia's Beauty Co.">
 
